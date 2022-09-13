@@ -4,7 +4,6 @@ Entity Framework 6 (EF6) is an object-relational mapper that enables .NET Framew
 
 ## Fork content
 - Adding a new DbFunction "AsString(string value, int maxLength = 8000, bool isFixedLength = false, bool isUnicode = false)".
-  
   This function allow users to customize string parameters.
   
   eg: DbFunctions.AsString("", 2, true, false) generates a char(2) instead of a varchar(8000) SQL parameter.
