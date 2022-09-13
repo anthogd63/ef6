@@ -2,6 +2,11 @@
 
 Entity Framework 6 (EF6) is an object-relational mapper that enables .NET Framework, .NET Core, and modern .NET developers to work with relational data using domain-specific objects. It eliminates the need for most of the data-access code that developers usually need to write.
 
+## Fork content
+- Adding a new DbFunction "AsString(string value, int maxLength = 8000, bool isFixedLength = false, bool isUnicode = false)".
+  This function allow users to customize string parameters.
+  eg: DbFunctions.AsString("", 2, true, false) generates a char(2) instead of a varchar(8000) SQL parameter.
+
 ## Status and Support
 
 The latest version of EF6 is still supported by Microsoft--see [Entity Framework Support Policies](https://docs.microsoft.com/ef/efcore-and-ef6/support) for details. However, EF6 is no longer being actively developed. This means that:
